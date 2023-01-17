@@ -1,0 +1,644 @@
+/*
+    COLOUR PALETTE
+
+ dark blue:   #084272;
+ light blue:  #E5F5FA;
+ medium blue: #005FAA;
+ light grey:  #F5F5F5;
+ green:       #6ba23f;
+
+*/
+
+/* custom changes */
+/* UTILITY CLASSES */
+
+
+
+/* UNIVERSAL STYLES & TYPOGRAPHY */
+.container {
+    font-family: Calibri, Arial, sans-serif;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+    margin: 0;
+}
+
+header {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #084272;
+    width: 100%;
+}
+
+h2 {
+    font-size: 1.875rem;
+}
+
+h3 {
+    font-size: 2.125rem;
+    font-weight: bold;
+}
+
+p, 
+a {
+    font-size: 1.125rem;
+}
+
+.top-image {
+    height: 10rem;
+}
+
+
+/* MOBILE LAYOUT */
+/* Header styles */
+header ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.top-level-nav li {
+    line-height: 1;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0.5rem;
+    width: 24.5%;
+    background-color: #084272;
+}
+
+.top-level-nav li:hover {
+    background-color: #6ba23f;
+}
+
+.top-level-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0;
+}
+
+.main-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.main-menu ul {
+    margin: 0.5rem 0;
+    justify-content: space-between;
+}
+
+.main-menu a {
+    color: #084272;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.main-menu li a:hover {
+    color: #6ba23f;
+    text-decoration: underline;
+}
+
+/* Main styles */
+/* Index Page */
+.index-page .top-image {
+    background: url(../img/banner-wind-sm.webp) center bottom / cover no-repeat;
+}
+
+.home-nav {
+    background-color: #e5f5fa;
+}
+
+.home-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+}
+
+.home-nav li {
+    width: 45%;
+    padding: 0.5rem;
+    margin: 0.75rem 0;
+    background-color: #fff;
+    border: 1px solid #e7e7e7;
+    display: flex;
+}
+
+.home-nav li:hover {
+    background-color: #005faa;
+    border: 1px solid #005faa;
+}
+
+.home-nav a {
+    color: #005faa;
+    text-decoration: none;
+    margin: auto;
+}
+
+.home-nav li:hover a{
+    color: #fff;
+}
+
+.left-side,
+.right-side {
+    padding: 0 1.5rem;
+}
+
+.left-side {
+    margin-top: 2.5rem;
+}
+
+.right-side {
+    margin-top: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+.index-body img {
+    width: 100%;
+}
+
+.index-body h2,
+h3 {
+   margin: 0.5rem 0;
+}
+
+.index-body p {
+    margin: 1.5rem 0;
+}
+
+.button {
+    margin-top: 1rem;
+    background-color: #084272;
+    border: 1px solid #084272;
+}
+
+.button:hover {
+    background-color: #e5f5fa;
+}
+
+.button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.button p {
+    margin: 0.5rem 1rem;
+}
+
+.button:hover p { 
+    color: #084272;
+}
+
+/* Your-Home Page */
+.your-home-page .top-image {
+    background: url(../img/banner-your-home-sm.webp) center bottom / cover no-repeat;
+}
+
+.your-home-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.your-home-nav li {
+    width: 42.5%;
+    margin-top: 2rem;
+}
+
+.your-home-nav li:hover a{
+    background-color: #005faa;
+}
+
+.your-home-nav a {
+    background-color: #084272;
+    color: #fff;
+    text-decoration: none;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.your-home-nav p{
+    margin: 1rem;
+}
+
+.your-home-body {
+    padding: 2rem;
+}
+
+.your-home-body h2 {
+    text-transform: uppercase;
+    margin: 1.5rem;
+}
+
+.your-home-body p {
+    margin: 1rem 0;
+}
+
+.your-home-body a {
+    text-decoration: none;
+    color: #005faa;
+}
+
+.your-home-body a:hover {
+    color: #6ba23f;
+}
+
+.your-home-body img {
+    width: 100%;
+}
+
+.your-home-content {
+    text-align: left;
+}
+
+.contact-us {
+    background-color: #f5f5f5;
+    padding: 2rem;
+}
+
+.contact-us h2 {
+    text-transform: uppercase;
+}
+
+.contact-us a {
+    color: #005faa;
+    text-decoration: none;
+}
+
+.contact-us a:hover {
+    color: #6ba23f;
+}
+
+.contact-us div > div {
+    background-color: #fff;
+    border: 1px solid #e7e7e7;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+/* Community Page */
+.community-page .top-image {
+    background: url(../img/banner-community-sm.webp) center bottom / cover no-repeat;
+}
+
+.community-body {
+    padding: 2rem;
+}
+
+.community-body h2 {
+    margin: 1rem;
+}
+
+.community-body p {
+    text-align: left;
+    margin: 1rem 0;
+}
+
+.community-text p:first-of-type {
+    font-weight: bold;
+    margin: 0;
+}
+
+.community-nav li {
+    margin-bottom: 2rem;
+}
+
+.community-nav a {
+    background-color: #084272;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.community-nav a:hover {
+    background-color: #005faa;
+}
+
+.community-nav p {
+    margin: 1rem;
+}
+
+.community-nav img {
+    width: 100%;
+}
+
+.community-lower-banner {
+    padding: 2rem;
+    background: url(../img/building-stronger-sm.webp) center bottom / cover no-repeat;
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 2rem;
+    text-align: left;
+}
+
+.box h2 {
+    text-align: center;
+}
+
+.box p {
+    margin: 1rem 0;
+}
+
+.box a {
+    color: #005faa;
+    text-decoration: none;
+}
+
+.box a:hover {
+    color: #6ba23f;
+}
+
+
+
+/* Footer styles */
+footer {
+    background-color: #e5f5fa;
+    text-align: left;
+}
+
+.footer-items {
+    padding: 2rem;
+}
+
+footer p {
+    color: #000;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+footer a{
+    color: #084272;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #6ba23f;
+}
+
+
+/* MEDIA QUERIES */
+/* Medium screen */
+@media only screen and (min-width: 800px) {
+    /* Header */
+    h1 {
+        width: fit-content;
+    }
+
+    .main-menu {
+        justify-content: space-between;
+        padding: 1.5rem;
+    }
+
+    /* Body */
+    .top-image {
+        height: 16rem;
+    }
+
+    /* Index body */
+    .index-page .top-image {
+        background: url(../img/banner-wind-med.webp) center bottom / cover no-repeat;
+    }
+
+    .home-nav li {
+        width: 30%;
+    }
+
+    .index-body {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+
+    .left-side,
+    .right-side {
+        border: 1px solid #e5f5fa;
+        padding: 2rem;
+        margin: 2rem 0;
+    }
+
+    .left-side {
+        width: 35%;
+    }
+
+    .right-side {
+        width: 55%;
+        background-color: #f5f5f5;
+    }
+
+    .right-side .button {
+        justify-content: center;
+        width: fit-content;
+        margin: auto;
+    }
+
+    /* Your-Home */
+    .your-home-page .top-image {
+        background: url(../img/banner-your-home-med.webp) center bottom / cover no-repeat;
+    }
+
+    .your-home-nav img {
+        order: -1;
+    }
+
+    .your-home-nav li {
+        width: 30%;
+    }
+
+    .your-home-content {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .your-home-body section:first-child img {
+        margin-right: 2rem;
+    }
+
+    .your-home-body section:last-child img {
+        margin-left: 2rem;
+    }
+
+    .your-home-body section:last-child img {
+        order: 1;
+    }
+
+    .your-home-body img+div {
+        width: 50%;
+    }
+
+    .your-home-body img {
+        width: 50%;
+        height: fit-content;
+    }
+
+    .your-home-body p {
+        margin-top: 0;
+    }
+
+    .contact-us-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .contact-us h2 {
+        width: 100%;
+    }
+
+    .contact-us-container div {
+        width: 30%;
+    }
+
+    /* Community */
+    .community-page .top-image {
+        background: url(../img/banner-community-med.webp) center bottom / cover no-repeat;
+    }
+
+    .community-nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .community-nav li {
+        width: 30%;
+    }
+
+    .community-nav img {
+        order: -1;
+    }
+
+    .community-lower-banner > div {
+        padding: 2rem;
+    }
+
+    .box {
+        width: 75%;
+        margin-left: auto;
+    }
+
+    /* Footer */
+    .footer-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer ul {
+        margin: 0;
+    }
+
+    footer li {
+        padding: 0 1rem;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    /* Header */
+    .top-level-nav ul,
+    .main-menu,
+    .home-nav ul,
+    .index-body,
+    .your-home-nav,
+    .your-home-body,
+    .contact-us-container,
+    .community-body,
+    .community-lower-banner > div,
+    .footer-items {
+        width: 1300px;
+        margin: 0 auto;    
+    }
+
+    .top-level-nav {
+        background-color: #084272;
+    }
+
+    .top-level-nav a {
+        margin: 0;
+    }
+
+    .top-level-nav ul {
+        justify-content: right;
+    }
+
+    .top-level-nav li {
+        width: fit-content;
+        border: 1px solid #fff;
+        border-style: none solid;
+        padding: 1rem 0.5rem;
+    }
+
+    /* Body */
+    .top-image {
+        height: 27rem;
+    }
+
+    /* Index */
+    .index-page .top-image {
+        background: url(../img/banner-wind-lrg.webp) center bottom / cover no-repeat;
+    }
+
+    .home-nav ul {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .home-nav li {
+        width: 15%;
+    }
+
+    .index-body {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+
+    .index-body div {
+        margin: 2rem 0.5rem;
+        width: auto;
+    }
+
+    .left-side .button {
+        justify-content: center;
+        width: fit-content;
+        margin: 1rem auto;
+    }
+
+    .left-side {
+        width: auto;
+    }
+
+    /* Your-Home */
+    .your-home-page .top-image {
+        background: url(../img/banner-your-home-lrg.webp) center bottom / cover no-repeat;
+    }
+
+    /* Community */
+    .community-page .top-image {
+        background: url(../img/banner-community-lrg.webp) center bottom / cover no-repeat;
+    }
+
+    .box {
+        width: 50%;
+    }
+}
